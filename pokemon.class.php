@@ -1,6 +1,6 @@
 <?php 
 
-	class pokemon{
+	class Pokemon{
 
 		public $pv;
 		public $type;
@@ -23,10 +23,10 @@
 		}
 
 		public function afficher(){
-			if($this -> pv != 0){
-				print '<div><img class="carte" src="assets/' . $this-> carte . '"></div>';
+			if($this -> pv > 0){
+				print '<div><img class="carte" src="assets/' . $this -> carte . '"></div>';
 			}else {
-				print '<div><h2>' . $this-> nom . ' est mort</h2></div>';
+				print '<div><h2>' . $this -> nom . ' est mort</h2></div>';
 			}
 		}
 
